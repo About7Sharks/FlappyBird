@@ -26,6 +26,9 @@ this.bird.anchor.setTo(-0.2, 0.5);
         var spaceKey = game.input.keyboard.addKey(
             Phaser.Keyboard.SPACEBAR);
         spaceKey.onDown.add(this.jump, this);
+        
+        game.input.mouse.capture = true;
+
     },
     update: function () {
         // If the bird is out of the screen (too high or too low)
